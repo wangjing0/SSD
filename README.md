@@ -12,8 +12,8 @@ B = cov([x1; x2]);
 [S,X] = ReighleyQuotient(A,B,'min',1)
 
 
-
-Note on SSD:
+# 
+# Note on SSD:
 Scaling analysis has two steps, 1) finding the scaling dimension on the training set and 2) validating with the test data. This function handles the first step using an optimization. Its input has the matrix A and B. Where A is the distance of the population activity A = (r1 - r2)' * ( r1 - r2) and a covariance B = cov([r1; r2]). 
  r1 and r2  has dimension of n x p. n is the number of observations (different time bins), and p is the number of neurons. It outputs a set of eigen vectors X, which are the predicted scaling directions in descending/ascending order.
 
