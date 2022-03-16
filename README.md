@@ -1,5 +1,5 @@
 # SSD: Scaling Subspace Decomposition
-Aim to solve the optimization problem  v = argmin_v {v'Av/v'Bv}, by sequentially searching for the projection that minimizes the difference (A) between two conditions (X1, X2). The denominator regularizates it by penalizing direction with diminishing covariance (B).
+SSD aims to solve the optimization problem  v = argmin_v {v'Av/v'Bv}, by sequentially searching for the projection along which the difference (A) between two conditions (X1, X2) is minimized. The denominator regularizates it by penalizing directions with diminishing covariance (B).
 <p align="center">
   <img src="ssd_pca.png" height="500" >
 </p>
