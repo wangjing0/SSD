@@ -1,6 +1,6 @@
 # SSD: Scaling Subspace Decomposition
-- <img src="https://latex.codecogs.com/svg.image?v&space;={\operatorname{argmin}_{v}}&space;=&space;\frac{v^\top&space;{A}&space;v}{v^\top&space;v}" />
-
+- <img src="https://latex.codecogs.com/svg.image?v&space;={\operatorname{argmin}_{v}}&space;=&space;\frac{v^\top&space;{A}&space;v}{v^\top&space;v}" title="https://latex.codecogs.com/svg.image?v ={\operatorname{argmin}_{v}} = \frac{v^\top {A} v}{v^\top v}" />
+- 
 SSD aims to solve the optimization problem  v = argmin_v {v'Av/v'Bv}, by sequentially searching for the projection along which the difference (A) between two conditions (X1, X2) is minimized. The denominator regularizates it by penalizing directions with diminishing covariance (B).
 <p align="center">
   <img src="ssd_pca.png" height="500" >
