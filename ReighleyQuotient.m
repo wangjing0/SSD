@@ -17,7 +17,7 @@ if ishermitian(A) && ishermitian(B)
     for i=1:size(X_,2)
         x=X_(:,i);
         X_(:,i)=x./norm(x);
-        if norm(x)<1e6
+        if norm(x)>1e-6
             IND=[IND;i];
         end
     end
