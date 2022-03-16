@@ -1,16 +1,8 @@
 # SSD: Scaling Subspace Decomposition
-
-Find eigenvalue S, and corresponding eigenvector X, using Reighley quotient R(A,B)= x'Ax/x'Bx = X' S X / X'X 
-
-Example:
-
-
-A = (x1 - x2)' * ( x1 - x2); % L2 normal, x's dimension is nxp, n = number of observations, p = dimensionality. 
-
-B = cov([x1; x2]); 
-
-[S,X] = ReighleyQuotient(A,B,'min',1)
-
+Aim to solve the optimization problem  v = argmin_v {v'Av/v'Bv}, by sequentially searching for the projection direction that minimizes the difference (A) between two conditions (X1, X2). The denominator regularizates it by penalizing direction with diminishing covariance (B).
+<p align="center">
+  <img src="ssd_pca.png" height="100" >
+</p>
 
 # Note on SSD:
 Scaling analysis has two steps, 1) finding the scaling dimension on the training set and 2) validating with the test data. This function handles the first step using an optimization. Its input has the matrix A and B. Where A is the distance of the population activity A = (r1 - r2)' * ( r1 - r2) and a covariance B = cov([r1; r2]). 
