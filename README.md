@@ -1,4 +1,6 @@
 # SSD: Scaling Subspace Decomposition
+Try the tutorial here!
+https://github.com/wangjing0/SSD/blob/master/SSD_demo.ipynb
 SSD aims to solve the optimization problem <img src="https://latex.codecogs.com/svg.image?v&space;={\operatorname{argmin}_{v}}&space;=&space;\frac{v^\top&space;{A}&space;v}{v^\top{B}&space;v}" title="https://latex.codecogs.com/svg.image?v ={\operatorname{argmin}_{v}} = \frac{v^\top {A} v}{v^\top{B} v}" /> , by sequentially searching for the projection along which the difference (A) between two conditions (X1, X2) is minimized. The denominator regularizates it by penalizing directions with diminishing covariance (B).
 
 <p align="center">
