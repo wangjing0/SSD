@@ -1,6 +1,5 @@
 # Scaling Subspace Decomposition (SSD)
-**Try the tutorial here!**
-https://github.com/wangjing0/SSD/blob/master/SSD_demo.ipynb
+[**Try the tutorial here!**](https://github.com/wangjing0/SSD/blob/master/SSD_demo.ipynb)
 
 **Just a reminder that data applied for validation should be different from those used in SSD. The metrics of validation depends on your specifical problem. The general hypothesis is whether the two become more similar after proper dimensional reduction with SSD.** 
 
