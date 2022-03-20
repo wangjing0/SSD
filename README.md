@@ -1,10 +1,10 @@
-# SSD: Scaling Subspace Decomposition
+# Scaling Subspace Decomposition (SSD)
 **Try the tutorial here!**
 https://github.com/wangjing0/SSD/blob/master/SSD_demo.ipynb
 
 **Just a reminder that data applied for validation should be different from those used in SSD. I didn’t make it explicit in the tutorial.  The metrics of validation depends on your specifical problem. The general hypothesis is whether the two become more similar after proper dimensional reduction with SSD.** 
 
-SSD aims to solve the optimization problem <img src="https://latex.codecogs.com/svg.image?v&space;={\operatorname{argmin}_{v}}&space;=&space;\frac{v^\top&space;{A}&space;v}{v^\top{B}&space;v}" title="https://latex.codecogs.com/svg.image?v ={\operatorname{argmin}_{v}} = \frac{v^\top {A} v}{v^\top{B} v}" /> , by sequentially searching for the projection along which the difference (A) between two conditions (X1, X2) is minimized. The denominator regularizates it by penalizing directions with diminishing covariance (B).
+SSD is a dimensionality reduction method, aiming to solve the optimization problem <img src="https://latex.codecogs.com/svg.image?v&space;={\operatorname{argmin}_{v}}&space;=&space;\frac{v^\top&space;{A}&space;v}{v^\top{B}&space;v}" title="https://latex.codecogs.com/svg.image?v ={\operatorname{argmin}_{v}} = \frac{v^\top {A} v}{v^\top{B} v}" /> , by sequentially searching for the projection along which the difference (A) between two conditions (X1, X2) is minimized. The denominator regularizates it by penalizing directions with diminishing covariance (B). The comparison and contrast to the Principal component analysis (PCA) is illustrated below.
 
 <p align="center">
   <img src="ssd_pca.png" height="500" >
