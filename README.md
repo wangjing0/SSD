@@ -10,7 +10,7 @@ SSD is a dimensionality reduction method formulated by Jing Wang et al, aiming t
   <img src="ssd_pca.png" height="500" >
 </p>
 
-[**Try the tutorial here!**](https://github.com/wangjing0/SSD/blob/master/SSD_demo.ipynb) **Just a reminder that data applied for validation should be different from those used in SSD. The metrics of validation depends on the specifical problem. Your general hypothesis will be whether the two become more similar after proper dimensional reduction with SSD.** 
+[**Try the tutorial here!**](https://github.com/wangjing0/SSD/blob/master/SSD_demo.ipynb) **Just a reminder that data applied for validation should be different from those used in SSD. The metrics of validation depends on your specifical problem. The general hypothesis will be whether the two condition become more similar after proper dimensionality reduction.** 
 
 # Notes on the data:
 Scaling analysis has two steps, 1) finding the scaling dimension on the training set and 2) validating with the test data. This function handles the first step using an optimization. Its input has the matrix A and B. Where A is the distance of the population activity A = (r1 - r2)' * ( r1 - r2) and a covariance B = cov([r1; r2]). 
