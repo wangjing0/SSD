@@ -1,6 +1,10 @@
 # Scaling Subspace Decomposition (SSD)
 
-SSD is a dimensionality reduction method formulated by Jing Wang et al, aiming to solve the optimization problem <img src="https://latex.codecogs.com/svg.image?v&space;={\operatorname{argmin}_{v}}&space;=&space;\frac{v^\top&space;{A}&space;v}{v^\top{B}&space;v}" title="https://latex.codecogs.com/svg.image?v ={\operatorname{argmin}_{v}} = \frac{v^\top {A} v}{v^\top{B} v}" /> , by sequentially searching for the projection along which the difference (A) between two dynamical representations (X1, X2) is minimized. The denominator regularizates it by penalizing directions with diminishing covariance (B). The comparison and contrast to the Principal component analysis (PCA) is illustrated below.
+SSD is a dimensionality reduction method formulated by Jing Wang et al, aiming to solve the optimization problem 
+<p align="center">
+  <img src="https://github.com/wangjing0/SSD/blob/master/Untitled.png" height="100" >
+</p>
+, by sequentially searching for the projection along which the difference (A) between two dynamical representations (X1, X2) is minimized. The denominator regularizates it by penalizing directions with diminishing covariance (B). The comparison and contrast to the Principal component analysis (PCA) is illustrated below.
 
 <p align="center">
   <img src="ssd_pca.png" height="500" >
