@@ -2,7 +2,7 @@
 
 SSD is a dimensionality reduction method formulated by Jing Wang et al, aiming to solve the optimization problem 
 <p align="center">
-  <img src="https://github.com/wangjing0/SSD/blob/master/Untitled.png" height="100" >
+  <img src="https://github.com/wangjing0/SSD/blob/master/Untitled.png" height="50" >
 </p>
 , by sequentially searching for the projection along which the difference (A) between two dynamical representations (X1, X2) is minimized. The denominator regularizates it by penalizing directions with diminishing covariance (B). The comparison and contrast to the Principal component analysis (PCA) is illustrated below.
 
